@@ -35,17 +35,18 @@
 		<main class="mt-5">
 			<section>
 				<center><h3><u>***Quiz Time***</u></h3>
+				<br />
 				<p>Take the quiz to prove how great a fan are you of Game Of Thrones.</p></center>
 			</section>
 			<br />
-			<section>
+			<section class="text-center jumbotron">
 				<form method="POST">
 					<h3>^  Details  ^</h3>
 					<p>Enter the following details:</p>
-					<input name="fname" placeholder="First Name" /><br />
-					<input name="lname" placeholder="Last Name" /><br />
-					<input name="uid" placeholder="User ID" /><br />
-					<select name="gender" />
+					<input class="form-control" name="fname" placeholder="First Name" /><br />
+					<input class="form-control" name="lname" placeholder="Last Name" /><br />
+					<input class="form-control" name="uid" placeholder="User ID" /><br />
+					<select class="form-control" name="gender" />
 						<option value="" disabled selected>Please select Gender</option>
 						<option value="M">Male</option>
 						<option value="F">Female</option>
@@ -53,66 +54,80 @@
 					</select>
 					<br />
 					<br />
+			</section>
+			<section>	
+					<h3 class="text-center">^  Quiz  ^</h3>
 					
-					<h3>^  Quiz  ^</h3>
 					<h4>Q1-} How did Daenerys Targaryen eventually hatch her dragon eggs?</h4>
-					<input type="checkbox" value="1a" />In a lighning storm<br />
-					<input type="checkbox" value="1b" />In a funeral pyre<br />
-					<input type="checkbox" value="1c" />In a fireplace<br />
-					<input type="checkbox" value="1d" />In a frozen cave<br />
+					<div class="form-check">
+						<input class="form-check-input" name="1" type="radio" value="1a" id="Radios1" />
+						<label class="form-check-label" for="Radios1">In a lighning storm</label><br />
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" name="1" type="radio" value="1b" id="Radios2" />
+						<label class="form-check-label" for="Radios2">In a funeral pyre</label><br />
+					</div>
+					<div class="form-check">
+							<input class="form-check-input" name="1" type="radio" value="1c" id="Radios3" />
+							<label class="form-check-label" for="Radios3">In a fireplace</label><br />
+					</div>
+					<div class="form-check">
+							<input class="form-check-input" name="1" type="radio" value="1d" id="Radios4" />
+							<label class="form-check-label" for="Radios4">In a frozen cave</label><br />
+					</div>
 					<br />
 					<h4>Q2-} The phrase 'Valar Morghulis' or 'All men must die' is usually responded with:</h4>
-					<input type="checkbox" value="2a" />Valar Dohaeris<br />
-					<input type="checkbox" value="2b" />Valar Rohnas<br />
-					<input type="checkbox" value="2c" />Valar Gogo<br />
+					<input type="radio" value="2a" />Valar Dohaeris<br />
+					<input type="radio" value="2b" />Valar Rohnas<br />
+					<input type="radio" value="2c" />Valar Gogo<br />
 					<br />
 					<h4>Q3-} Besides dragonglass, what is the only other substance capable of defeating White Walkers?</h4>
-					<input type="checkbox" value="3a" />Weirwood<br />
-					<input type="checkbox" value="3b" />Wildfire<br />
-					<input type="checkbox" value="3c" />Valyrian Steel<br />
-					<input type="checkbox" value="3d" />Snowballs<br />
+					<input type="radio" value="3a" />Weirwood<br />
+					<input type="radio" value="3b" />Wildfire<br />
+					<input type="radio" value="3c" />Valyrian Steel<br />
+					<input type="radio" value="3d" />Snowballs<br />
 					<br />
 					<h4>Q4-} Which Stark family direwolf was killed in retaliation for an attack on Prince Joffrey?</h4>
-					<input type="checkbox" value="4a" />Ghost<br />
-					<input type="checkbox" value="4b" />Lady<br />
-					<input type="checkbox" value="4c" />Nymeria<br />
-					<input type="checkbox" value="4d" />Summer<br />
+					<input type="radio" value="4a" />Ghost<br />
+					<input type="radio" value="4b" />Lady<br />
+					<input type="radio" value="4c" />Nymeria<br />
+					<input type="radio" value="4d" />Summer<br />
 					<br />
 					<h4>Q5-} Arya's punishment for stealing from the Many-Face God is:</h4>
-					<input type="checkbox" value="5a" />Death<br />
+					<input type="radio" value="5a" />Death<br />
 					<input type="checkbox" value="5b" />Memory loss<br />
 					<input type="checkbox" value="5c" />Blindness<br />
 					<input type="checkbox" value="5d" />Madness<br />
 					<br />
 					<h4>Q6-} The Night king was created using a dagger made of:</h4>
-					<input type="checkbox" value="6a" />Valyrian steel<br />
-					<input type="checkbox" value="6b" />Blue ice<br />
-					<input type="checkbox" value="6c" />Diamond<br />
-					<input type="checkbox" value="6d" />Obsidian<br />
+					<input type="radio" value="6a" />Valyrian steel<br />
+					<input type="radio" value="6b" />Blue ice<br />
+					<input type="radio" value="6c" />Diamond<br />
+					<input type="radio" value="6d" />Obsidian<br />
 					<br />
 					<h4>Q7-} Who created the secret tunnel in the sewers under Casterly rock?</h4>
-					<input type="checkbox" value="7a" />Tyrion Lannister<br />
-					<input type="checkbox" value="7b" />Lord Baelish<br />
-					<input type="checkbox" value="7c" />Jaime Lannister<br />
-					<input type="checkbox" value="7d" />Varys<br />
+					<input type="radio" value="7a" />Tyrion Lannister<br />
+					<input type="radio" value="7b" />Lord Baelish<br />
+					<input type="radio" value="7c" />Jaime Lannister<br />
+					<input type="radio" value="7d" />Varys<br />
 					<br />
 					<h4>Q8-} Dead creatures revived by whte walkers are known as:</h4>
-					<input type="checkbox" value="8a" />Walkers<br />
-					<input type="checkbox" value="8b" />Wights<br />
-					<input type="checkbox" value="8c" />Zombie<br />
-					<input type="checkbox" value="8d" />Claws<br />
+					<input type="radio" value="8a" />Walkers<br />
+					<input type="radio" value="8b" />Wights<br />
+					<input type="radio" value="8c" />Zombie<br />
+					<input type="radio" value="8d" />Claws<br />
 					<br />
 					<h4>Q9-} For what crime did Davos Seaworth lose the joints of his left hand?</h4>
-					<input type="checkbox" value="9a" />Treason<br />
-					<input type="checkbox" value="9b" />Smuggling<br />
-					<input type="checkbox" value="9c" />Bribery<br />
-					<input type="checkbox" value="9d" />Robbery<br />
+					<input type="radio" value="9a" />Treason<br />
+					<input type="radio" value="9b" />Smuggling<br />
+					<input type="radio" value="9c" />Bribery<br />
+					<input type="radio" value="9d" />Robbery<br />
 					<br />
 					<h4>Q10-} How old is the Night King?</h4>
-					<input type="checkbox" value="10a" />300 yrs<br />
-					<input type="checkbox" value="10b" />700 yrs<br />
-					<input type="checkbox" value="10c" />5000 yrs<br />
-					<input type="checkbox" value="10d" />12000 yrs<br />
+					<input type="radio" value="10a" />300 yrs<br />
+					<input type="radio" value="10b" />700 yrs<br />
+					<input type="radio" value="10c" />5000 yrs<br />
+					<input type="radio" value="10d" />12000 yrs<br />
 					<br />
 					<br />
 					<button type="submit">Submit Quiz</button>
